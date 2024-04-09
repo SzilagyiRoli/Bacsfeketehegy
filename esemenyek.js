@@ -5,7 +5,7 @@ const meggynap = document.getElementById("meggynapok");
 
 
 async function getData(){
-    const adatok = await fetch("esemenyek.json").then(res=>res.json());
+    const adatok = await fetch("json/esemenyek.json").then(res=>res.json());
     return adatok;
 }
 
