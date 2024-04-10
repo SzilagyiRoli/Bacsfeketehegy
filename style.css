@@ -177,7 +177,7 @@ main
 {
     width: 100%;
 
-    #hirek, #esemenyek, #meggy
+    #hirek, #esemenyek, #meggy, #golya, #fecske
     {
         padding: 3vw;
         display: flex;
@@ -477,6 +477,7 @@ main
             padding: 1vw;
             margin-top: 2vh;
             transition: all ease 0.3s;
+            font-size: 1.4vw;
         }
 
         & a:hover
@@ -491,7 +492,105 @@ main
             top: -8%;
             right: -5%;
             rotate: 30deg;
+            width: 18vw;
         }
+    }
+
+    #golya
+    {
+        background-color: hsl( 10, 29%, 88%);
+        position: relative;
+
+        .golya_wrapper
+        {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .desc
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1vh;
+
+            & h2, h5
+            {
+                color: black;
+                font-size: 2vw;
+            }
+
+            .golya_gomb
+            {
+                font-size: 1.5vw;
+                padding: 1vw;
+                padding-inline: 1.5vw;
+                text-align: center;
+                background-color: white;
+                color: black;   
+                border: 1px solid black;
+                border-radius: .5vw;
+                text-decoration: none;
+            }
+
+            .golya_gomb:hover
+            {
+                text-decoration: underline;
+            }
+
+            & h5
+            {
+                font-size: 1.1vw;
+
+                & a
+                {
+                    color: blue;
+                }
+            }
+        }
+
+        & img
+        {
+            width: 40%;
+            aspect-ratio: 1;
+        }
+
+        
+    }
+
+    #fecske
+    {
+        background-color: hsl( 10, 29%, 91%);
+
+
+        .fecske_wrap
+        {
+            margin-top: 5vh;
+            width: 80%;
+            display: flex;
+            gap: 1vw;
+            overflow-x: scroll;
+
+            scrollbar-width: thin;
+
+            & a
+            {
+                flex-shrink: 0;
+                flex-grow: 0;
+                flex-basis: 0;
+
+
+                & img
+                {
+                    width: 20vw;
+                    aspect-ratio: .7;
+                    object-fit: cover;
+                }
+            }
+        }
+
     }
     
 }
